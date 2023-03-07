@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LinerLayoutTask</string>
+    <string name="winter_in_p">Ahmed hassan</string>
+    <string name="day">3 hr</string>
+    <string name="job">Engineer</string>
+    <string name="nationalityValue">Russian</string>
+    <string name="locationValue">UK</string>
+    <string name="timeValue">5 Days ago</string>
+    <string name="reviewsValue">(150 Reviews)</string>
+    <string name="rateValue">4.5</string>
+    <string name="person">photo</string>
+</resources>
