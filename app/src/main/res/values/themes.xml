@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.LinerLayoutTask" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
@@ -13,4 +13,25 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ReviewText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textInFrame</item>
+
+    </style>
+
+    <style name="PublicText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/job</item>
+        <item name="android:textSize">@dimen/textInFrame</item>
+
+    </style>
+
+    <style name="PublicText.nationality" parent="Widget.AppCompat.TextView" />
+
+    <style name="PublicText.job" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+
 </resources>
