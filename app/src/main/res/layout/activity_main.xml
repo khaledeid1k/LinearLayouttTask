@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -12,23 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_margin="20dp"
-        android:backgroundTint="#F8F8F8">
+        android:background="@drawable/card_shape">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/danielburk1"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
                 android:contentDescription="@string/person"
-                android:layout_margin="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:src="@drawable/personphoto" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +45,7 @@
                         android:layout_weight="1"
                         android:text="@string/winter_in_p"
                         android:textColor="@color/black"
-                        android:textSize="16sp"
+                        android:textSize="@dimen/sizeTextTitle"
                         android:textStyle="bold" />
 
                     <TextView
@@ -57,47 +53,40 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="6dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/frame"
                         android:gravity="center"
                         android:text="@string/day"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textInFrame" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="7dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/job"
-                        android:layout_width="0dp"
+                        style="@style/PublicText.job"
+                        android:layout_width="1dp"
                         android:layout_height="16dp"
-                        android:layout_weight="1"
-                        android:text="@string/job"
-                        android:textColor="#DE122940"
-                        android:textSize="12sp" />
+                        android:text="@string/job" />
 
                     <TextView
                         android:id="@+id/nationality"
+                        style="@style/PublicText.nationality"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="6dp"
                         android:layout_marginEnd="10dp"
-                        android:gravity="center"
-                        android:text="@string/nationalityValue"
-                        android:textColor="#DE122940"
-                        android:textSize="12sp" />
+                        android:text="@string/nationalityValue" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="7dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -107,8 +96,8 @@
                         android:layout_weight="1"
                         android:drawablePadding="5dp"
                         android:text="@string/locationValue"
-                        android:textColor="#99263238"
-                        android:textSize="13sp"
+                        android:textColor="@color/location"
+                        android:textSize="@dimen/location"
                         app:drawableLeftCompat="@drawable/location" />
 
                     <TextView
@@ -116,41 +105,35 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="6dp"
                         android:layout_marginEnd="10dp"
                         android:gravity="center"
                         android:text="@string/timeValue"
-                        android:textColor="#99263238"
-                        android:textSize="12sp" />
+                        android:textColor="@color/location"
+                        android:textSize="@dimen/textInFrame" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="7dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/reviews"
+                        style="@style/ReviewText"
                         android:layout_width="wrap_content"
                         android:layout_height="16dp"
-                        android:text="@string/reviewsValue"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
+                        android:text="@string/reviewsValue" />
 
                     <TextView
                         android:id="@+id/rate"
+                        style="@style/ReviewText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="6dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="5dp"
                         android:drawablePadding="5dp"
                         android:gravity="center"
                         android:text="@string/rateValue"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        android:layout_marginStart="5dp"
                         app:drawableRightCompat="@drawable/star" />
                 </LinearLayout>
 
