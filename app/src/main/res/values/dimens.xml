@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeTextTitle">16sp</dimen>
+    <dimen name="textInFrame">12sp</dimen>
+    <dimen name="location">13sp</dimen>
+</resources>
