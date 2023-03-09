@@ -20,8 +20,8 @@
             android:orientation="horizontal">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="93dp"
+                android:layout_height="93dp"
                 android:layout_margin="5dp"
                 android:contentDescription="@string/person"
                 android:src="@drawable/personphoto" />
@@ -71,7 +71,7 @@
                         android:id="@+id/job"
                         style="@style/PublicText.job"
                         android:layout_width="1dp"
-                        android:layout_height="16dp"
+                        android:layout_height="wrap_content"
                         android:text="@string/job" />
 
                     <TextView
